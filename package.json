@@ -1,0 +1,26 @@
+{
+  "name": "es6",
+  "version": "1.0.0",
+  "description": "es6",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\t\t"
+  },
+  "keywords": [
+    "app"
+  ],
+  "author": "zhimin",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "~3.9.0",
+    "gulp-babel": "~6.1.2",
+    "gulp-sourcemaps": "~1.6.0",
+    "babel-preset-es2015": "~6.9.0",
+    "gulp-concat": "~2.6.0",
+    "gulp-watch": "~4.3.5"
+  }
+}

@@ -4,7 +4,7 @@
 
 var gulp = require('gulp');
 var watch = require('gulp-watch');
-//const babel = require('gulp-babel');
+const babel = require('gulp-babel');
 //var sourcemaps = require("gulp-sourcemaps");
 //var concat = require("gulp-concat");
 
@@ -16,13 +16,12 @@ gulp.task('es6', function() {
   gulp.src( jsUrl )
     .pipe(watch( jsUrl ))
     //.pipe(sourcemaps.init())
-    //.pipe(babel({
-    //  presets: ['es2015']
-    //}))
+    .pipe(babel({
+      presets: ['es2015']
+    }))
     //.pipe(concat('all.js'))
     //.pipe(sourcemaps.write("."))
     .pipe(gulp.dest( jsPut ));
 });
 
 gulp.task('default', [ 'es6']);
-//gulp.task('default', ['less2css', 'post-css','minify-css', 'compress']);

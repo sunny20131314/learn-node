@@ -3,3 +3,5 @@
 dist/
 test/
 node_modules/
+filtername.txt
+testFile.txt
